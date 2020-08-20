@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  background-color: #201728;
+  height: 120vh;
+}
+
+.top-content {
+  margin-top: -24px;
+  background-image: url("./kjd-assets/hearo-top.jpg");
+  background-size: cover;
+  height: 100%;
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
+}
+
+.logo {
+  position: absolute;
+  top: 45%;
+  left: 39%;
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
+.about {
+  background-color: #201728;
+  height: 100vh;
+}
+/*# sourceMappingURL=kjd.css.map */
