@@ -1,6 +1,12 @@
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  src: url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Medium";
+  src: url("./fonts/Playfair_Display/PlayfairDisplay-Medium.ttf")
+    format("truetype");
 }
 
 * {
@@ -10,25 +16,300 @@
 
 .top {
   background-color: #201728;
-  height: 120vh;
-}
-
-.top-content {
-  margin-top: -24px;
-  background-image: url("./kjd-assets/hearo-top.jpg");
-  background-size: cover;
-  height: 100%;
-  transform: skewY(2deg);
-}
-
-.logo {
-  position: absolute;
-  top: 45%;
-  left: 39%;
-  transform: skewY(-2deg);
-}
-
-.about {
-  background-color: #201728;
   height: 100vh;
+
+  .top-content {
+    background-color: #201728;
+    background-image: url("./kjd-assets/hearo-top.png");
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    transform-origin: bottom right;
+    transform: skewY(2deg);
+
+    .logo {
+      position: relative;
+      top: 45%;
+      transform: skewY(-2deg);
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    .logo-img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .arrow-container {
+      position: fixed;
+      top: 75%;
+      left: 50%;
+      transform: skewY(-2deg);
+      height: 6%;
+      width: 4%;
+    }
+
+    .arrow-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .about-container {
+    background-color: #70259b;
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    top: 90vh;
+    left: 25vw;
+    z-index: 2;
+
+    .about-text {
+      font-family: PlayfairDisplay-Medium;
+      text-align: center;
+      font-size: 18px;
+      padding: 10%;
+      color: #ffffff;
+    }
+
+    .about-link {
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .about-btn {
+      font-family: "Montserrat-Regular";
+      position: relative;
+      width: 100px;
+      height: 20px;
+      color: #ffffff;
+      z-index: 3;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e11c5b;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .arrow-right {
+      position: relative;
+      top: -75%;
+      left: 60%;
+      z-index: 4;
+      width: 35%;
+    }
+
+    .about-skew {
+      position: relative;
+      background-color: #70259b;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      transform: skewY(-2deg);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.middle {
+  background-color: #201728;
+  color: #ffffff;
+  height: 150vh;
+
+  .middle-content {
+    background-image: url("./kjd-assets/hex-gradient.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    padding-top: 100%;
+  }
+
+  .middle-heading {
+    font-family: PlayfairDisplay-Medium;
+    margin-left: 10%;
+  }
+
+  .middle-p {
+    margin: 10%;
+  }
+
+  .read-link {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .read-btn {
+    font-family: "Montserrat-Regular";
+    position: relative;
+    width: 100px;
+    height: 20px;
+    color: #ffffff;
+    z-index: 3;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e11c5b;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .arrow-right {
+    position: relative;
+    top: -75%;
+    left: 60%;
+    z-index: 4;
+    width: 35%;
+  }
+
+  .middle-container {
+    padding-top: 10%;
+    .middle-img {
+      width: 100%;
+    }
+  }
+}
+
+.bottom {
+  background-color: #70259b;
+  color: #ffffff;
+  height: 85vh;
+  transform-origin: top left;
+  transform: skewY(-2deg);
+
+  .bottom-content {
+    background-image: url("./kjd-assets/circle-gradient.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: 80% 5%;
+    transform: skewY(2deg);
+  }
+
+  .bottom-heading {
+    font-family: "PlayfairDisplay-Medium";
+    margin-left: 10%;
+    padding-top: 10%;
+  }
+
+  .bottom-p {
+    margin: 10%;
+  }
+
+  .read-link {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .read-btn {
+    font-family: "Montserrat-Regular";
+    position: relative;
+    width: 100px;
+    height: 20px;
+    color: #ffffff;
+    z-index: 3;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e11c5b;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .arrow-right {
+    position: relative;
+    top: -75%;
+    left: 60%;
+    z-index: 4;
+    width: 35%;
+  }
+
+  .bottom-container {
+    padding-top: 10%;
+    .bottom-img {
+      width: 100%;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #ffffff;
+  height: fit-content;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+
+  .card-1 {
+    background-image: url("./kjd-assets/bg-square-gradient.png");
+  }
+
+  .card-2 {
+    background-image: url("./kjd-assets/bg-rectangle-gradient.png");
+  }
+
+  .card-3 {
+    background-image: url("./kjd-assets/bg-circle-gradient.png");
+  }
+
+  .card {
+    background-color: #201728;
+    width: 300px;
+    height: 200px;
+
+    .card-heading {
+      font-family: "PlayfairDisplay-Medium";
+      color: #e11c5b;
+      padding: 5%;
+    }
+    .card-text {
+      font-family: "Montserrat-Regular";
+      font-size: 24px;
+      padding: 5%;
+    }
+    .card-arrow {
+      position: relative;
+      width: fit-content;
+      margin-left: 80%;
+    }
+  }
+}
+
+.abouts {
+  background-color: #201728;
+  height: 60vh;
+  width: 100%;
+
+  .about {
+    text-align: center;
+    color: #ffffff;
+    height: fit-content;
+
+    .heading {
+      font-family: "PlayfairDisplay-Medium";
+      padding-top: 10px;
+      color: #e11c5b;
+    }
+
+    .email {
+      font-family: "Montserrat-Regular";
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .phone {
+      font-family: "Montserrat-Regular";
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }
