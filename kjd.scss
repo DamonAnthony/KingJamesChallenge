@@ -50,8 +50,8 @@ a {
       top: 75%;
       left: 50%;
       transform: skewY(-2deg);
-      height: 6%;
-      width: 4%;
+      height: 50px;
+      width: 15px;
     }
 
     .arrow-img {
@@ -109,9 +109,9 @@ a {
     }
 
     .about-skew {
-      position: relative;
+      position: absolute;
       background-color: #70259b;
-      top: 0;
+      bottom: 0;
       width: 100%;
       height: 50px;
       transform: skewY(-2deg);
@@ -131,52 +131,64 @@ a {
     background-repeat: no-repeat;
     background-position: 80% 50%;
     padding-top: 100%;
-  }
 
-  .middle-heading {
-    font-family: PlayfairDisplay-Medium;
-    margin-left: 10%;
-  }
+    .not-arrow {
+      display: none;
+    }
 
-  .middle-p {
-    margin: 10%;
-  }
+    .middle-heading {
+      font-family: PlayfairDisplay-Medium;
+      margin-left: 10%;
+    }
 
-  .read-link {
-    position: relative;
-    height: fit-content;
-    width: fit-content;
-  }
+    .middle-p {
+      margin: 10%;
+    }
 
-  .read-btn {
-    font-family: "Montserrat-Regular";
-    position: relative;
-    width: 100px;
-    height: 20px;
-    color: #ffffff;
-    z-index: 3;
-    font-size: 14px;
-    padding: 5px;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #e11c5b;
-    margin-right: auto;
-    margin-left: auto;
-  }
+    .read-link {
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+    }
 
-  .arrow-right {
-    position: relative;
-    top: -75%;
-    left: 60%;
-    z-index: 4;
-    width: 35%;
-  }
+    .read-btn {
+      font-family: "Montserrat-Regular";
+      position: relative;
+      width: 100px;
+      height: 20px;
+      color: #ffffff;
+      z-index: 3;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e11c5b;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-  .middle-container {
-    padding-top: 10%;
-    .middle-img {
-      width: 100%;
+    .arrow-right {
+      position: relative;
+      top: -75%;
+      left: 60%;
+      z-index: 4;
+      width: 35%;
+    }
+
+    .middle-container {
+      padding-top: 10%;
+      .middle-img {
+        width: 100%;
+      }
+    }
+
+    .waves-container {
+      display: none;
+    }
+
+    .arrow-container {
+      display: none;
     }
   }
 }
@@ -184,63 +196,68 @@ a {
 .bottom {
   background-color: #70259b;
   color: #ffffff;
-  height: 85vh;
+  height: 87vh;
   transform-origin: top left;
   transform: skewY(-2deg);
 
   .bottom-content {
     background-image: url("./kjd-assets/circle-gradient.png");
     background-size: 55%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: 80% 5%;
     transform: skewY(2deg);
-  }
 
-  .bottom-heading {
-    font-family: "PlayfairDisplay-Medium";
-    margin-left: 10%;
-    padding-top: 10%;
-  }
+    .bottom-heading {
+      font-family: "PlayfairDisplay-Medium";
+      margin-left: 10%;
+      padding-top: 10%;
+    }
 
-  .bottom-p {
-    margin: 10%;
-  }
+    .bottom-p {
+      margin: 10%;
+    }
 
-  .read-link {
-    position: relative;
-    height: fit-content;
-    width: fit-content;
-  }
+    .read-link {
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+    }
 
-  .read-btn {
-    font-family: "Montserrat-Regular";
-    position: relative;
-    width: 100px;
-    height: 20px;
-    color: #ffffff;
-    z-index: 3;
-    font-size: 14px;
-    padding: 5px;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #e11c5b;
-    margin-right: auto;
-    margin-left: auto;
-  }
+    .read-btn {
+      font-family: "Montserrat-Regular";
+      position: relative;
+      width: 100px;
+      height: 20px;
+      color: #ffffff;
+      z-index: 3;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e11c5b;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-  .arrow-right {
-    position: relative;
-    top: -75%;
-    left: 60%;
-    z-index: 4;
-    width: 35%;
-  }
+    .arrow-right {
+      position: relative;
+      top: -75%;
+      left: 60%;
+      z-index: 4;
+      width: 35%;
+    }
 
-  .bottom-container {
-    padding-top: 10%;
-    .bottom-img {
-      width: 100%;
+    .bottom-container {
+      padding-top: 10%;
+      .bottom-img {
+        width: 100%;
+      }
+    }
+
+    .bottom-arrow-container {
+      display: none;
     }
   }
 }
@@ -250,10 +267,9 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   color: #ffffff;
-  height: fit-content;
+  height: 100vh;
   width: 100%;
   margin-top: 10%;
-  margin-bottom: 15%;
 
   .card-1 {
     background-image: url("./kjd-assets/bg-square-gradient.png");
@@ -319,5 +335,129 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 1025px) {
+  .top {
+    .about-container {
+      .about-text {
+        font-size: 24px;
+      }
+      .about-skew {
+        bottom: -25px;
+      }
+    }
+  }
+
+  .middle {
+    height: 220vh;
+
+    .middle-content {
+      background-size: 25%;
+      background-position: 30% 50%;
+      padding-top: 25%;
+
+      .not-arrow {
+        display: block;
+        text-align: center;
+        height: 188px;
+        margin-bottom: 10%;
+      }
+
+      .middle-heading {
+        position: relative;
+        z-index: 6;
+        font-size: 60px;
+        width: 300px;
+      }
+
+      .middle-p {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        width: 300px;
+      }
+
+      .read-btn {
+        margin-left: 10%;
+      }
+
+      .middle-container {
+        position: relative;
+        left: 500px;
+        bottom: 330px;
+        width: 700px;
+        padding-top: 0;
+
+        .middle-img {
+          object-fit: fill;
+        }
+
+        .waves-container {
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          z-index: 5;
+          top: -60px;
+          left: 580px;
+        }
+
+        .arrow-container {
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          left: -150px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    height: 120vh;
+    padding-top: 5%;
+
+    .bottom-content {
+      height: 103%;
+      background-size: 25%;
+      background-position: 65% 5%;
+
+      .bottom-heading {
+        position: relative;
+        padding-top: 10%;
+        margin-left: 50%;
+        z-index: 6;
+        font-size: 60px;
+      }
+      .bottom-p {
+        position: absolute;
+        margin-top: 5%;
+        margin-right: 10%;
+        width: 300px;
+        right: 0;
+      }
+
+      .read-link {
+        position: absolute;
+        right: 0;
+        bottom: 40%;
+        margin-right: 24%;
+      }
+
+      .bottom-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 10%;
+        padding-left: 10%;
+        width: 700px;
+
+        .bottom-arrow-container {
+          display: block;
+          position: absolute;
+          right: 50px;
+          bottom: -100px;
+        }
+      }
+    }
+  }
 }
