@@ -22,6 +22,60 @@ a {
   height: 100vh;
 }
 
+.top .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  background-color: #201728;
+  overflow-x: hidden;
+  padding-top: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top .sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top .sidebar a:hover {
+  color: #e11c5b;
+}
+
+.top .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.top .openbtn {
+  position: relative;
+  z-index: 6;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.top #main {
+  position: absolute;
+  right: 0;
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
 .top .top-content {
   background-color: #201728;
   background-image: url("./kjd-assets/hearo-top.png");
@@ -329,10 +383,17 @@ a {
 }
 
 .cards .card .card-arrow {
-  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 80%;
+}
+
+.cards .card .card-arrow-2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10%;
   margin-left: 80%;
 }
 
@@ -369,6 +430,12 @@ a {
 }
 
 @media (min-width: 1025px) {
+  .top .sidebar {
+    padding-top: 60pxpx;
+  }
+  .top .sidebar a {
+    font-size: 25px;
+  }
   .top .about-container .about-text {
     font-size: 24px;
   }
@@ -420,7 +487,7 @@ a {
     position: absolute;
     width: 50px;
     height: 50px;
-    z-index: 5;
+    z-index: 3;
     top: -60px;
     left: 580px;
   }
@@ -439,6 +506,7 @@ a {
     height: 103%;
     background-size: 25%;
     background-position: 65% 5%;
+    background-color: #70259b;
   }
   .bottom .bottom-content .bottom-heading {
     position: relative;
@@ -473,6 +541,20 @@ a {
     position: absolute;
     right: 50px;
     bottom: -100px;
+  }
+  .cards {
+    height: 50vh;
+  }
+  .abouts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 20vh;
+  }
+  .abouts .about {
+    padding: 2%;
   }
 }
 /*# sourceMappingURL=kjd.css.map */
